@@ -11,7 +11,7 @@ const app = express();
 
 // ─── Middleware ──────────────────────────────────────────────────────────────
 app.use(cors({
-    origin: [FRONT_END_URL],
+    origin: [process.env.FRONT_END_URL],
     credentials: true,
 }));
 app.use(express.json());
